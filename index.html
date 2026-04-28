@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blessed Sacrament Catholic Church</title>
+  <meta name="description" content="Blessed Sacrament Catholic Church in Birmingham, Alabama. Mass times, bulletin, events, and parish life.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><img src="assets/nav-icon.png" alt="Blessed Sacrament icon"></span>
+        <span class="brand-wordmark">
+          <span class="brand-title">Blessed Sacrament</span>
+          <span class="brand-subtitle">Catholic Church</span>
+        </span>
+      </a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li><li><a href="events.html#calendar">Calendar</a></li>
+        <li><a href="bulletin.html">Bulletin</a></li>
+        <li><a href="latin-mass.html">Latin Mass</a></li>
+        <li><a href="sacraments.html">Sacraments</a></li>
+        <li><a class="btn btn-primary btn-small" href="#donate">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>"I am come that they may have life, and have it more abundantly."</h1>
+        <p class="verse">John 10:10</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#mass-times">View Mass Times</a>
+          <a class="btn btn-outline" href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">Read This Week's Bulletin</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mass-times" class="quick-info">
+      <div class="container grid-3">
+        <article class="card">
+          <h3>Weekend Masses</h3>
+          <p>Saturday 4:00 p.m. (English)</p>
+          <p>Sunday 7:30 a.m. (Latin), 9:00 a.m. (English), 10:45 a.m. (Latin)</p>
+        </article>
+        <article class="card">
+          <h3>Weekday Masses</h3>
+          <p>Mon, Wed, Fri: 8:30 a.m. (English)</p>
+          <p>Tue, Thu: 8:30 a.m. (Latin)</p>
+        </article>
+        <article class="card">
+          <h3>Confessions</h3>
+          <p>Saturday 3:30–3:55 p.m.</p>
+          <p>Sunday 7:00–7:25, 8:30–8:55, 10:15–10:40 a.m.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="events" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Parish Life</p>
+          <h2>Upcoming Events & Notices</h2>
+        </div>
+        <div class="grid-2">
+          <article class="feature">
+            <img class="placeholder-img" src="https://picsum.photos/seed/blessedevents1/800/500" alt="Parish event placeholder image">
+            <h3>Father Booth's Weekly Reflection</h3>
+            <p>Fr. Booth's weekly reflection is posted online, and the full weekly bulletin is available as a downloadable PDF.</p>
+            <a href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">Read online</a>
+          </article>
+          <article class="feature">
+            <img class="placeholder-img" src="https://picsum.photos/seed/blessedevents2/800/500" alt="First Friday placeholder image">
+            <h3>First Friday</h3>
+            <p>English Mass at 8:30 a.m. followed by adoration and benediction, with Latin Low Mass at 6:30 p.m.</p>
+            <a href="events.html">View details</a>
+          </article>
+          <article class="feature">
+            <h3>First Saturday</h3>
+            <p>Latin Mass at 8:30 a.m., followed by altar server training.</p>
+            <a href="events.html">View details</a>
+          </article>
+          <article class="feature">
+            <h3>May Crowning</h3>
+            <p>Join us following the 9:00 a.m. and 10:45 a.m. Masses for May Crowning.</p>
+            <a href="events.html">View details</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="bulletin" class="section section-alt">
+      <div class="container grid-2 align-center">
+        <div>
+          <p class="kicker">This Week</p>
+          <h2>Parish Bulletin</h2>
+          <p>Keep up with announcements, Mass intentions, parish updates, and upcoming liturgical events.</p>
+          <a class="btn btn-primary" href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">Open Bulletin</a>
+        </div>
+        <div class="bulletin-box">
+          <h3>Featured Announcements</h3>
+          <ul>
+            <li>Second collection this weekend supports the Catholic Home Missions Appeal.</li>
+            <li>Mass intentions are currently limited to one Mass per family per week.</li>
+            <li>Please pray for our seminarians, sick, and homebound parishioners.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid-2 align-center">
+        <img class="placeholder-img" src="https://picsum.photos/seed/blessedabout/900/700" alt="Parish community placeholder image">
+        <div>
+          <p class="kicker">About Our Parish</p>
+          <h2>Welcome to Blessed Sacrament</h2>
+          <p>We are grateful you are here. Whether you are visiting, returning to the faith, or looking for a parish home, we invite you to pray with us and become part of our community.</p>
+          <a class="btn btn-outline" href="about.html#contact">Join the Parish</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" class="section section-alt">
+      <div class="container grid-2 align-center">
+        <div>
+          <p class="kicker">Support Our Mission</p>
+          <h2>Online Giving</h2>
+          <p>Your generosity supports parish worship, sacramental life, faith formation, and care for those in need.</p>
+          <a class="btn btn-primary" href="#" aria-label="Online giving coming soon">Give Now</a>
+        </div>
+        <div class="bulletin-box">
+          <h3>Ways to Give</h3>
+          <ul>
+            <li>Offertory giving at weekend and weekday Masses.</li>
+            <li>Checks payable to Blessed Sacrament or Blessed Sacrament Church.</li>
+            <li>Special collections throughout the liturgical year.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2 align-center">
+        <div class="map-wrap">
+          <iframe
+            title="Blessed Sacrament Catholic Church map"
+            src="https://www.google.com/maps?q=1460+Pearson+Ave+SW+Birmingham+AL+35211&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <p class="kicker">Contact Us</p>
+          <h2>Send a Message to the Parish Office</h2>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Blessed Sacrament Catholic Church</h3>
+        <p>1460 Pearson Ave SW<br>Birmingham, AL 35211</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="events.html">Events</a></li><li><a href="events.html#calendar">Calendar</a></li>
+          <li><a href="bulletin.html">Bulletin</a></li>
+          <li><a href="latin-mass.html">Latin Mass</a></li>
+          <li><a href="sacraments.html">Sacraments</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>1460 Pearson Ave SW, Birmingham, AL 35211<br><a href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">myblessedsacrament.com</a></p>
+        <p>Follow us on social media</p>
+        <div class="social-row">
+          <a class="social-icon" href="https://www.facebook.com/pages/Blessed-Sacrament-Catholic-Church/217249931635364" target="_blank" rel="noopener noreferrer" aria-label="Blessed Sacrament Facebook">f</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Blessed Sacrament Catholic Church</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

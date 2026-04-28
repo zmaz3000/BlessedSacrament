@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Blessed Sacrament Catholic Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="assets/nav-icon.png" alt="Blessed Sacrament icon"></span><span class="brand-wordmark"><span class="brand-title">Blessed Sacrament</span><span class="brand-subtitle">Catholic Church</span></span></a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="events.html">Events</a></li><li><a href="#calendar">Calendar</a></li><li><a href="bulletin.html">Bulletin</a></li><li><a href="latin-mass.html">Latin Mass</a></li><li><a href="sacraments.html">Sacraments</a></li><li><a class="btn btn-primary btn-small" href="index.html#donate">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <p class="kicker">Parish Life</p>
+        <h1>Events & Announcements</h1>
+        <p>Stay connected to parish announcements, devotional opportunities, and liturgical events throughout the month.</p>
+      </div>
+    </section>
+    <section id="calendar" class="section">
+      <div class="container grid-2">
+        <article class="feature"><img class="placeholder-img" src="https://picsum.photos/seed/blessedfriday/800/500" alt="First Friday placeholder image"><h3>First Friday</h3><p>English Mass at 8:30 a.m. in the Rectory, followed by Adoration and Benediction, and Latin Low Mass at 6:30 p.m. in the Church.</p></article>
+        <article class="feature"><img class="placeholder-img" src="https://picsum.photos/seed/blessedsaturday/800/500" alt="First Saturday placeholder image"><h3>First Saturday</h3><p>Latin Mass is offered at 8:30 a.m. Altar server training follows Mass.</p></article>
+        <article class="feature"><h3>May Crowning</h3><p>May Crowning follows both the 9:00 a.m. and 10:45 a.m. Sunday Masses.</p></article>
+        <article class="feature"><h3>Parish Notices</h3><p>Current notices include updates on confessions, second collections, seminarians to pray for, and Mass intention scheduling.</p><p><a href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">View current parish calendar and bulletin updates</a></p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Blessed Sacrament Catholic Church</h3><p>1460 Pearson Ave SW<br>Birmingham, AL 35211</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="events.html">Events</a></li><li><a href="#calendar">Calendar</a></li><li><a href="bulletin.html">Bulletin</a></li><li><a href="latin-mass.html">Latin Mass</a></li><li><a href="sacraments.html">Sacraments</a></li></ul></div>
+      <div><h4>Contact</h4><p>1460 Pearson Ave SW, Birmingham, AL 35211<br><a href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">myblessedsacrament.com</a></p><p>Follow us on social media</p><div class="social-row"><a class="social-icon" href="https://www.facebook.com/pages/Blessed-Sacrament-Catholic-Church/217249931635364" target="_blank" rel="noopener noreferrer" aria-label="Blessed Sacrament Facebook">f</a></div></div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Blessed Sacrament Catholic Church</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

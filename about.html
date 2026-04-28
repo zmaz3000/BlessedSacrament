@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Blessed Sacrament Catholic Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="assets/nav-icon.png" alt="Blessed Sacrament icon"></span><span class="brand-wordmark"><span class="brand-title">Blessed Sacrament</span><span class="brand-subtitle">Catholic Church</span></span></a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li><li><a href="events.html#calendar">Calendar</a></li>
+        <li><a href="bulletin.html">Bulletin</a></li>
+        <li><a href="latin-mass.html">Latin Mass</a></li>
+        <li><a href="sacraments.html">Sacraments</a></li>
+        <li><a class="btn btn-primary btn-small" href="index.html#donate">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <p class="kicker">About Blessed Sacrament</p>
+        <h1>Welcome to Our Parish Family</h1>
+        <p>Blessed Sacrament Catholic Church gathers parishioners and visitors for reverent worship, faithful Catholic formation, and life in Christ centered on the Eucharist.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2 align-center">
+        <img class="placeholder-img" src="https://picsum.photos/seed/blessedmission/900/700" alt="Parish mission placeholder image">
+        <div>
+          <h2>Our Mission</h2>
+          <p>We seek to know, love, and serve Christ through the Holy Sacrifice of the Mass, devotion to the sacraments, and works of mercy in parish life and beyond.</p>
+          <p>Visitors are always welcome at Blessed Sacrament. If you would like to join the parish, parish census forms are available at the Religious Goods Counter in the vestibule of the front entrance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container grid-2 align-center">
+        <div class="map-wrap">
+          <iframe
+            title="Blessed Sacrament Catholic Church map"
+            src="https://www.google.com/maps?q=1460+Pearson+Ave+SW+Birmingham+AL+35211&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <p class="kicker">Get in Touch</p>
+          <h2>Contact the Parish Office</h2>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Blessed Sacrament Catholic Church</h3>
+        <p>1460 Pearson Ave SW<br>Birmingham, AL 35211</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="events.html">Events</a></li><li><a href="events.html#calendar">Calendar</a></li>
+          <li><a href="bulletin.html">Bulletin</a></li>
+          <li><a href="latin-mass.html">Latin Mass</a></li>
+          <li><a href="sacraments.html">Sacraments</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>1460 Pearson Ave SW, Birmingham, AL 35211<br><a href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">myblessedsacrament.com</a></p>
+        <p>Follow us on social media</p>
+        <div class="social-row">
+          <a class="social-icon" href="https://www.facebook.com/pages/Blessed-Sacrament-Catholic-Church/217249931635364" target="_blank" rel="noopener noreferrer" aria-label="Blessed Sacrament Facebook">f</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Blessed Sacrament Catholic Church</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baptism Registration | Blessed Sacrament Catholic Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="assets/nav-icon.png" alt="Blessed Sacrament icon"></span><span class="brand-wordmark"><span class="brand-title">Blessed Sacrament</span><span class="brand-subtitle">Catholic Church</span></span></a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="events.html">Events</a></li><li><a href="events.html#calendar">Calendar</a></li><li><a href="bulletin.html">Bulletin</a></li><li><a href="latin-mass.html">Latin Mass</a></li><li><a href="sacraments.html">Sacraments</a></li><li><a class="btn btn-primary btn-small" href="index.html#donate">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <p class="kicker">Sacraments · Baptism</p>
+        <h1>Baptism Registration</h1>
+        <p>Infant Baptism is typically celebrated in a common ceremony. Please submit this form so the parish office can confirm your date and preparation details.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2 align-center">
+        <div class="bulletin-box">
+          <h3>Baptism Checklist</h3>
+          <ul>
+            <li>Complete this registration form in full.</li>
+            <li>Parents and godparents attend baptism preparation class.</li>
+            <li>Provide required sacramental paperwork to the parish office.</li>
+            <li>Wait for office confirmation before finalizing plans.</li>
+          </ul>
+          <p><a href="sacraments.html">Back to Sacraments</a></p>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <p class="kicker">Registration Form</p>
+          <h2>Infant Baptism Information</h2>
+
+          <label for="childName">Child Full Name</label>
+          <input id="childName" name="childName" type="text" required>
+
+          <label for="dob">Child Date of Birth</label>
+          <input id="dob" name="dob" type="date" required>
+
+          <label for="fatherName">Father Full Name</label>
+          <input id="fatherName" name="fatherName" type="text" required>
+
+          <label for="motherName">Mother Full Name (including maiden name)</label>
+          <input id="motherName" name="motherName" type="text" required>
+
+          <label for="phone">Best Contact Phone</label>
+          <input id="phone" name="phone" type="tel" required>
+
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="address">Family Address</label>
+          <input id="address" name="address" type="text" required>
+
+          <label for="godfather">Godfather Name</label>
+          <input id="godfather" name="godfather" type="text">
+
+          <label for="godmother">Godmother Name</label>
+          <input id="godmother" name="godmother" type="text">
+
+          <label for="prepClass">Baptism Prep Class Attended?</label>
+          <select id="prepClass" name="prepClass" required>
+            <option value="">Select one</option>
+            <option value="yes-last-3-years">Yes, within last 3 years</option>
+            <option value="yes-over-3-years">Yes, more than 3 years ago</option>
+            <option value="no">No, not yet</option>
+          </select>
+
+          <label for="desiredDate">Preferred Baptism Date</label>
+          <input id="desiredDate" name="desiredDate" type="date">
+
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" name="notes" rows="5"></textarea>
+
+          <button class="btn btn-primary" type="submit">Submit Baptism Registration</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Blessed Sacrament Catholic Church</h3><p>1460 Pearson Ave SW<br>Birmingham, AL 35211</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="events.html">Events</a></li><li><a href="events.html#calendar">Calendar</a></li><li><a href="bulletin.html">Bulletin</a></li><li><a href="latin-mass.html">Latin Mass</a></li><li><a href="sacraments.html">Sacraments</a></li></ul></div>
+      <div><h4>Contact</h4><p>1460 Pearson Ave SW, Birmingham, AL 35211<br><a href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">myblessedsacrament.com</a></p><p>Follow us on social media</p><div class="social-row"><a class="social-icon" href="https://www.facebook.com/pages/Blessed-Sacrament-Catholic-Church/217249931635364" target="_blank" rel="noopener noreferrer" aria-label="Blessed Sacrament Facebook">f</a></div></div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Blessed Sacrament Catholic Church</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
