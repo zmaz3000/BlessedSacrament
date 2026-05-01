@@ -51,6 +51,10 @@ a:hover {
   margin: 0 auto;
 }
 
+.container-wide {
+  width: min(1320px, 96%);
+}
+
 .topbar {
   background: var(--burgundy-900);
   color: var(--stone-100);
@@ -177,10 +181,80 @@ a:hover {
   gap: 1.2rem;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .nav-links a {
   font-weight: 600;
+}
+
+.has-dropdown {
+  position: relative;
+  padding-bottom: 0.7rem;
+  margin-bottom: -0.7rem;
+}
+
+.has-dropdown::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 0.65rem;
+}
+
+.nav-drop-toggle {
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+  color: var(--burgundy-700);
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-drop-toggle::after {
+  content: " \25BE";
+  font-size: 0.72em;
+}
+
+.nav-dropdown {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  margin: 0;
+  padding: 0.7rem 0.55rem 0.55rem;
+  border: 1px solid #e8ded0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 22px rgba(29, 20, 17, 0.12);
+  display: none;
+  z-index: 120;
+}
+
+.nav-dropdown li + li {
+  margin-top: 0.25rem;
+}
+
+.nav-dropdown a {
+  display: block;
+  padding: 0.45rem 0.5rem;
+  border-radius: 6px;
+}
+
+.nav-dropdown a:hover {
+  background: #f5ede5;
+  text-decoration: none;
+}
+
+.has-dropdown:hover .nav-dropdown,
+.has-dropdown:hover > .nav-dropdown,
+.has-dropdown > .nav-dropdown:hover,
+.has-dropdown:focus-within .nav-dropdown,
+.has-dropdown.open .nav-dropdown {
+  display: block;
 }
 
 .menu-toggle {
@@ -324,6 +398,13 @@ a:hover {
 
 .grid-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.staff-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.9rem;
+  padding-inline: 0.9rem;
 }
 
 .card {
@@ -664,6 +745,23 @@ a:hover {
 
   .nav-links.open {
     display: flex;
+  }
+
+  .has-dropdown {
+    width: 100%;
+  }
+
+  .nav-drop-toggle {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-dropdown {
+    position: static;
+    min-width: 0;
+    margin-top: 0.45rem;
+    box-shadow: none;
+    border-color: #eee3d5;
   }
 }
 

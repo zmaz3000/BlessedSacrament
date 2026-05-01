@@ -13,7 +13,7 @@
 <body>
   <nav class="site-nav">
     <div class="container nav-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="/">
         <span class="brand-mark"><img src="assets/nav-icon.png" alt="Blessed Sacrament icon"></span>
         <span class="brand-wordmark">
           <span class="brand-title">Blessed Sacrament</span>
@@ -22,12 +22,20 @@
       </a>
       <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">Menu</button>
       <ul id="nav-links" class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li><li><a href="events.html#calendar">Calendar</a></li>
-        <li><a href="bulletin.html">Bulletin</a></li>
-        <li><a href="latin-mass.html">Latin Mass</a></li>
-        <li><a href="sacraments.html">Sacraments</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="events">Events</a></li>
+        <li><a href="calendar">Calendar</a></li>
+        <li><a href="bulletin">Bulletin</a></li>
+        <li><a href="latin-mass">Latin Mass</a></li>
+        <li><a href="sacraments">Sacraments</a></li>
+        <li class="has-dropdown">
+          <button class="nav-drop-toggle" type="button" aria-expanded="false">Contact</button>
+          <ul class="nav-dropdown">
+            <li><a href="staff">Staff</a></li>
+            <li><a href="become-parishioner">Become a Parishioner</a></li>
+          </ul>
+        </li>
         <li><a class="btn btn-primary btn-small" href="#donate">Donate</a></li>
       </ul>
     </div>
@@ -83,17 +91,17 @@
             <img class="placeholder-img" src="https://picsum.photos/seed/blessedevents2/800/500" alt="First Friday placeholder image">
             <h3>First Friday</h3>
             <p>English Mass at 8:30 a.m. followed by adoration and benediction, with Latin Low Mass at 6:30 p.m.</p>
-            <a href="events.html">View details</a>
+            <a href="events">View details</a>
           </article>
           <article class="feature">
             <h3>First Saturday</h3>
             <p>Latin Mass at 8:30 a.m., followed by altar server training.</p>
-            <a href="events.html">View details</a>
+            <a href="events">View details</a>
           </article>
           <article class="feature">
             <h3>May Crowning</h3>
             <p>Join us following the 9:00 a.m. and 10:45 a.m. Masses for May Crowning.</p>
-            <a href="events.html">View details</a>
+            <a href="events">View details</a>
           </article>
         </div>
       </div>
@@ -105,7 +113,7 @@
           <p class="kicker">This Week</p>
           <h2>Parish Bulletin</h2>
           <p>Keep up with announcements, Mass intentions, parish updates, and upcoming liturgical events.</p>
-          <a class="btn btn-primary" href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">Open Bulletin</a>
+          <a class="btn btn-primary" href="/bulletins/latest.pdf" target="_blank" rel="noopener noreferrer">Open Bulletin</a>
         </div>
         <div class="bulletin-box">
           <h3>Featured Announcements</h3>
@@ -125,7 +133,7 @@
           <p class="kicker">About Our Parish</p>
           <h2>Welcome to Blessed Sacrament</h2>
           <p>We are grateful you are here. Whether you are visiting, returning to the faith, or looking for a parish home, we invite you to pray with us and become part of our community.</p>
-          <a class="btn btn-outline" href="about.html#contact">Join the Parish</a>
+          <a class="btn btn-outline" href="about#contact">Join the Parish</a>
         </div>
       </div>
     </section>
@@ -184,10 +192,10 @@
       <div>
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="events.html">Events</a></li><li><a href="events.html#calendar">Calendar</a></li>
-          <li><a href="bulletin.html">Bulletin</a></li>
-          <li><a href="latin-mass.html">Latin Mass</a></li>
-          <li><a href="sacraments.html">Sacraments</a></li>
+          <li><a href="events">Events</a></li><li><a href="calendar">Calendar</a></li>
+          <li><a href="bulletin">Bulletin</a></li>
+          <li><a href="latin-mass">Latin Mass</a></li>
+          <li><a href="sacraments">Sacraments</a></li>
         </ul>
       </div>
       <div>
@@ -205,3 +213,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events | Blessed Sacrament Catholic Church</title>
+  <title>Become a Parishioner | Blessed Sacrament Catholic Church</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
@@ -37,17 +37,60 @@
   <main>
     <section class="page-header">
       <div class="container">
-        <p class="kicker">Parish Life</p>
-        <h1>Events & Announcements</h1>
-        <p>Stay connected to parish announcements, devotional opportunities, and liturgical events throughout the month.</p>
+        <p class="kicker">Contact</p>
+        <h1>Become a Parishioner</h1>
+        <p>We are glad you are here. Submit this registration form and the parish office will follow up with next steps for joining Blessed Sacrament.</p>
       </div>
     </section>
-    <section id="calendar" class="section">
-      <div class="container grid-2">
-        <article class="feature"><img class="placeholder-img" src="https://picsum.photos/seed/blessedfriday/800/500" alt="First Friday placeholder image"><h3>First Friday</h3><p>English Mass at 8:30 a.m. in the Rectory, followed by Adoration and Benediction, and Latin Low Mass at 6:30 p.m. in the Church.</p></article>
-        <article class="feature"><img class="placeholder-img" src="https://picsum.photos/seed/blessedsaturday/800/500" alt="First Saturday placeholder image"><h3>First Saturday</h3><p>Latin Mass is offered at 8:30 a.m. Altar server training follows Mass.</p></article>
-        <article class="feature"><h3>May Crowning</h3><p>May Crowning follows both the 9:00 a.m. and 10:45 a.m. Sunday Masses.</p></article>
-        <article class="feature"><h3>Parish Notices</h3><p>Current notices include updates on confessions, second collections, seminarians to pray for, and Mass intention scheduling.</p><p><a href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">View current parish calendar and bulletin updates</a></p></article>
+
+    <section class="section">
+      <div class="container grid-2 align-center">
+        <article class="bulletin-box">
+          <h3>What to Expect</h3>
+          <ul>
+            <li>Complete this inquiry form with your household details.</li>
+            <li>The parish office will contact you to confirm registration.</li>
+            <li>You may also complete a parish census form in person at the Religious Goods Counter.</li>
+          </ul>
+          <p><a href="staff">Need help? Contact staff</a></p>
+        </article>
+
+        <form class="contact-form" action="#" method="post">
+          <p class="kicker">Registration Form</p>
+          <h2>Parishioner Inquiry</h2>
+
+          <label for="familyName">Family Last Name</label>
+          <input id="familyName" name="familyName" type="text" required>
+
+          <label for="primaryName">Primary Contact Full Name</label>
+          <input id="primaryName" name="primaryName" type="text" required>
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="address">Street Address</label>
+          <input id="address" name="address" type="text" required>
+
+          <label for="city">City</label>
+          <input id="city" name="city" type="text" required>
+
+          <label for="state">State</label>
+          <input id="state" name="state" type="text" required>
+
+          <label for="zip">ZIP Code</label>
+          <input id="zip" name="zip" type="text" required>
+
+          <label for="householdSize">Household Size</label>
+          <input id="householdSize" name="householdSize" type="number" min="1">
+
+          <label for="notes">Notes or Questions</label>
+          <textarea id="notes" name="notes" rows="5"></textarea>
+
+          <button class="btn btn-primary" type="submit">Submit Parishioner Request</button>
+        </form>
       </div>
     </section>
   </main>

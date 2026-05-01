@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events | Blessed Sacrament Catholic Church</title>
+  <title>Calendar | Blessed Sacrament Catholic Church</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
@@ -38,16 +38,22 @@
     <section class="page-header">
       <div class="container">
         <p class="kicker">Parish Life</p>
-        <h1>Events & Announcements</h1>
-        <p>Stay connected to parish announcements, devotional opportunities, and liturgical events throughout the month.</p>
+        <h1>Parish Calendar</h1>
+        <p>View upcoming Masses, devotions, holy days, and parish events in a calendar view.</p>
       </div>
     </section>
-    <section id="calendar" class="section">
-      <div class="container grid-2">
-        <article class="feature"><img class="placeholder-img" src="https://picsum.photos/seed/blessedfriday/800/500" alt="First Friday placeholder image"><h3>First Friday</h3><p>English Mass at 8:30 a.m. in the Rectory, followed by Adoration and Benediction, and Latin Low Mass at 6:30 p.m. in the Church.</p></article>
-        <article class="feature"><img class="placeholder-img" src="https://picsum.photos/seed/blessedsaturday/800/500" alt="First Saturday placeholder image"><h3>First Saturday</h3><p>Latin Mass is offered at 8:30 a.m. Altar server training follows Mass.</p></article>
-        <article class="feature"><h3>May Crowning</h3><p>May Crowning follows both the 9:00 a.m. and 10:45 a.m. Sunday Masses.</p></article>
-        <article class="feature"><h3>Parish Notices</h3><p>Current notices include updates on confessions, second collections, seminarians to pray for, and Mass intention scheduling.</p><p><a href="https://myblessedsacrament.com/" target="_blank" rel="noopener noreferrer">View current parish calendar and bulletin updates</a></p></article>
+
+    <section class="section">
+      <div class="container container-wide">
+        <div class="map-wrap" style="min-height: 760px;">
+          <iframe
+            title="Blessed Sacrament parish calendar"
+            src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FChicago"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            style="min-height: 760px;"></iframe>
+        </div>
+        <p style="margin-top: 1rem;">If you have a parish Google Calendar link, replace this embed URL with your church calendar for live parish scheduling.</p>
       </div>
     </section>
   </main>
@@ -63,5 +69,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-

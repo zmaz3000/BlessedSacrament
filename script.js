@@ -9,6 +9,39 @@ if (menuToggle && navLinks) {
   });
 }
 
+const navDropToggles = document.querySelectorAll(".nav-drop-toggle");
+if (navDropToggles.length) {
+  navDropToggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const parent = toggle.closest(".has-dropdown");
+      if (!parent) return;
+
+      const isOpen = parent.classList.contains("open");
+      document.querySelectorAll(".has-dropdown.open").forEach((el) => {
+        el.classList.remove("open");
+        const btn = el.querySelector(".nav-drop-toggle");
+        if (btn) btn.setAttribute("aria-expanded", "false");
+      });
+
+      if (!isOpen) {
+        parent.classList.add("open");
+        toggle.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!(event.target instanceof Element)) return;
+    if (event.target.closest(".has-dropdown")) return;
+
+    document.querySelectorAll(".has-dropdown.open").forEach((el) => {
+      el.classList.remove("open");
+      const btn = el.querySelector(".nav-drop-toggle");
+      if (btn) btn.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
 if (year) {
   year.textContent = new Date().getFullYear();
 }
