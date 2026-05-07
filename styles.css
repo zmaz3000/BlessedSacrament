@@ -586,16 +586,19 @@ a:hover {
   border-radius: 999px;
   display: inline-grid;
   place-items: center;
-  background: #ffffff;
-  color: #1d3f93;
+  background: #1877f2;
+  color: #ffffff;
   font-weight: 700;
   font-family: Arial, sans-serif;
+  font-size: 1.12rem;
+  line-height: 1;
   text-decoration: none;
-  border: 1px solid #c7d5f3;
+  border: 1px solid #0f5fc9;
 }
 
 .social-icon:hover {
   transform: translateY(-1px);
+  background: #166fe5;
   text-decoration: none;
 }
 
