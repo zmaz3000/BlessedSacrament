@@ -274,7 +274,7 @@ a:hover {
   text-align: center;
   color: var(--white);
   background: linear-gradient(180deg, rgba(27, 8, 14, 0.24), rgba(27, 8, 14, 0.34)),
-    url("BS_homepg_headerNEW.jpg")
+    url("assets/All_Photos/bradleyburckel-55.jpg")
       center/cover;
   padding: 5rem 0 8.25rem;
 }
